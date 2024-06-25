@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+
+    img{
+        width: 100px;
+        height: 100px;
+    }
+
+</style>
+
+<body>
+    <img style="width:1400px ; height: 130px;" src="hvhcqg.png" alt="" class="center">
+    <h2 style="background-color:rgb(63, 164, 189) ; height: 50px;"><span style="margin: 440px; font-size: 44px;color: #d86b04;">QUẢN LÝ SINH VIÊN</span></h2>
+    <label style="margin: 20%;" for="search"></label><input style="width: 200px;" type="text" id="search" placeholder="search theo tên sinh viên" oninput="searchUser()">
+    <label for="search"></label><input style="width: 200px;" type="text" id="search2" placeholder="search theo lớp sinh viên" oninput="searchClass()">
+    <label for="search"></label><input style="width: 200px;" type="text" id="search3" placeholder="search theo giới tính sinh viên " oninput="searchGender()">
+
+
+            <table border="1"   style="width: 400px;height: 300px;margin-top: 0%;background-color:rgba(204, 120, 10, 0.788); ">
+                <tr>
+                    <th colspan="2" style="background-color:darkseagreen;"><span style="color: brown;">Thông tin sinh viên</span></th>
+                </tr>
+                <tr>
+                    <th>ID</th>
+                    <td style="text-align: center;"> <input type="text" placeholder="STT" id="id"></td>
+                </tr>
+                <tr>
+                    <th>Họ tên</th>
+                    <td style="text-align: center;"> <input type="text" placeholder="Họ và tên" id="name"></td>
+                </tr>
+                <tr>
+                    <th>Ngày sinh</th>
+                    <td style="text-align: center;"> <input type="text" placeholder="Ngày sinh" id="born"></td>
+                <tr>
+                    <th>Giới tính</th>
+                    <td style="text-align: center;"> <input type="text" placeholder="Giới tính" id="gender"></td>
+                </tr>
+                <tr>
+                    <th>Lớp</th>
+                    <td style="text-align: center;"> <input type="text" placeholder="Lớp" id="class"></td>
+                </tr>
+                <tr>
+                    <th>Ảnh</th>
+                    <td style="text-align: center;"> <input type="text" placeholder="Ảnh" id="img" > <img style="display: none;" src="" alt="" id="img2"></td>
+
+                </tr>
+                <tr>
+                    <th>Điểm</th>
+                    <td style="text-align: center;"> 
+                        <input style="width: 40px;" type="number" placeholder="toán" id="toan" >
+                        <input style="width: 40px;" type="number" placeholder="văn" id="van" >
+                        <input style="width: 40px;" type="number" placeholder="anh" id="anh" >
+                        <input style="width: 40px;" type="number" placeholder="lý" id="ly" >
+                        <input style="width: 40px;" type="number" placeholder="hoá" id="hoa" >
+                        <input style="width: 40px;" type="number" placeholder="sinh" id="sinh" >
+                    </td>
+                </tr>
+                <tr>
+                    <th>action</th>
+                    <td style="text-align: center;">
+                        <div id="save"></div></td>
+                </tr>
+            </table>
+        
+            <table border="1" style="margin-top: -22.5%;margin-left: 31%;background-color:antiquewhite" id="table">
+                <!-- <tr>
+                    <th colspan="9">Danh sách sinh viên</th>
+                </tr>   
+                <tr>
+                    <th>ID</th>
+                    <th>Họ tên</th>
+                    <th>Ngày sinh</th>
+                    <th>Giới tính</th>
+                    <th>Lớp</th>
+                    <th>Ảnh</th>
+                    <th>Toán</th>
+                    <th>Văn</th>
+                    <th>Anh</th>
+                    <th>Lý</th>
+                    <th>Hoá</th>
+                    <th>Sinh</th>
+                    <th>Tuỳ chọn</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Nam</td>
+                    <td>12A4</td>
+                    <td><img src="" alt=""></td>
+                    <td>Toán</td>
+                    <td>Văn</td>
+                    <td>Anh</td>
+                    <td>Lý</td>
+                    <td>Hoá</td>
+                    <td>Sinh</td>
+                    <td><span ><button style="background-color: red;color: white;">Delete</button><button style="background-color: yellow;color: white;">Edit</button></span></td>
+                </tr> -->
+
+                
+
+            </table >    
+       <table border="1" id="3" style="margin: 10px;margin-left: 31%;background-color:antiquewhite">
+        <!-- <tr
+            <th colspan="9">Danh sách sinh viên</th>
+        </tr>   -->
+        <!-- <tr>
+            <th>ID</th>
+            <th>Họ tên</th>
+            <th>Ngày sinh</th>
+            <th>Giới tính</th>
+            <th>Lớp</th>
+            <th>Ảnh</th>
+            <th>Toán</th>
+            <th>Văn</th>
+            <th>Anh</th>
+            <th>Lý</th>
+            <th>Hoá</th>
+            <th>Sinh</th>
+
+        </tr> -->
+       </table>
+        </td>
+
+
+    <script src="product.js"></script>
+    <script src="class.js"> </script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
